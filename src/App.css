@@ -5,7 +5,7 @@
   background-color: #edf1d6
 }
 
-.App {
+.input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,3 +27,10 @@ button {
   width: 60px;
   cursor: pointer;
 }
+
+.displayItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
