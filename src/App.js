@@ -21,8 +21,10 @@ function App() {
     } 
   }
 
-  function handleDelete(e) {
+  function handleDelete(e, id) {
     e.preventDefault();
+    const deltet = list.filter((remove) => remove.id !== id);
+    setList(deltet);
   }
 
   return (
@@ -33,8 +35,8 @@ function App() {
      </div>
      
       {
-        list.map((items) => (
-          <div className='displayItem'>
+        list.map((items, id) => (
+          <div className='displayItem' key={id}>
             <li>{items}
               <button className='delete' onClick={handleDelete}>Delete</button>
             </li>
