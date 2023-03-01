@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Shopping List !</h1>
       <div className='container'>
       <div className='input'>
       <input type="text" placeholder='Add your items...' value={input} onChange={handleChange}/>
