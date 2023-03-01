@@ -29,7 +29,8 @@ function App() {
 
   return (
     <div className="App">
-     <div className='input'>
+      <div className='container'>
+      <div className='input'>
       <input type="text" placeholder='Add your items...' value={input} onChange={handleChange}/>
       <button className='add' onClick={addItem}>Add</button>
      </div>
@@ -43,6 +44,8 @@ function App() {
           </div>
         ))
       }
+     
+      </div>
      
     </div>
   );
