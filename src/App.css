@@ -28,9 +28,3 @@ button {
   cursor: pointer;
 }
 
-.displayItem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-

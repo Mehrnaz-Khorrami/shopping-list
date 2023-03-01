@@ -21,10 +21,10 @@ function App() {
     } 
   }
 
-  function handleDelete(e, id) {
-    e.preventDefault();
-    const deltet = list.filter((remove) => remove.id !== id);
+  function handleDelete(index) {
+    const deltet = list.filter((_, i) => i !== index);
     setList(deltet);
+    
   }
 
   return (
@@ -35,10 +35,10 @@ function App() {
      </div>
      
       {
-        list.map((items, id) => (
-          <div className='displayItem' key={id}>
+        list.map((items, index) => (
+          <div className='displayItem' key={index}>
             <li>{items}
-              <button className='delete' onClick={handleDelete}>Delete</button>
+              <button className='delete' onClick={() =>handleDelete(index)}>Delete</button>
             </li>
           </div>
         ))
