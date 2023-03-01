@@ -2,25 +2,35 @@
 
 * {
   font-family: 'Phudu', cursive;
-  background-color: #edf1d6
+  background-color: #edf1d6;
+  
 }
 
+.App{
+  border: solid 3px #609966;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #40513b;
+  margin: 150px auto;
+  width: 600px;
+}
 .input {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 50px;
+  
 }
 
 input {
   background-color: white;
   height: 30px;
-  width: 30vw;
+  width: 400px;
   border-radius: 10px;
+  padding: 1px 5px;
 }
 
 button {
-  background-color: #609966;
+  background-color: #9dc08b;
   margin-left: 10px;
   border-radius: 10px;
   height: 35px;
@@ -28,3 +38,21 @@ button {
   cursor: pointer;
 }
 
+li, .delete{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0px;
+  
+}
+
+li{
+  margin-left: 60px;
+  
+}
+.delete {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
